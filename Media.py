@@ -31,8 +31,9 @@ class Media():
         except FileExistsError:
             pass
 
-    def play_bgm(self, num):        
-        pygame.mixer.init(frequency = 44100)
+    def play_bgm(self, num): 
+        pygame.mixer.quit()       
+        pygame.mixer.init(frequency = 22050, buffer=512)
         pygame.mixer.music.load(self.resource_path("music{0}.mp3").format(num))
         pygame.mixer.music.play(-1)
 
