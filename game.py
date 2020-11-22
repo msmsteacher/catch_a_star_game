@@ -10,7 +10,7 @@ from Ranking import Ranking
 from Media import Media
 
 '''
-ゲームメインクラス
+ゲームメインクラスです
 '''
 class STAR_GAME():
     def __init__(self):
